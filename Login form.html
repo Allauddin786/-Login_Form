@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<style>
+    input[type=password]:invalid+div
+    {
+       display: none;
+    }
+    input[type=password]:invalid+div
+    {
+       display: block;
+        color: black;
+    }
+    p a
+    {
+        text-decoration: none;
+    }
+    form{
+        height: 100vh;
+    }
+    label
+    {
+        font-weight: bold;
+    }
+</style>
+</head>
+<body class="container-fluid" text-align >
+    <center>
+      <div class="d-flex justify-content-center">
+      </div> 
+      <div class="d-flex justify-content-center">
+      <form class="border p-4 w-25 shadow">
+        <h3>Create Account</h3>
+        <div class="row mt-2">
+            <label for="account">First Name</label>
+            <div>
+                <input type="text" placeholder="enter first name" class="form-control" id="account" >
+            </div>
+        </div>
+        <div class="row mt-2">
+            <label for="account">Last Name</label>
+            <div>
+                <input type="text" placeholder="enter last name" class="form-control" id="account" >
+            </div>
+        </div>
+        <div class="row mt-2">
+            <label for="account">profile picture</label>
+            <div>
+                <input type="text" placeholder="upload link" class="form-control" id="account" >
+            </div>
+        </div>
+        <div class="row mt-2">
+       <label for="account">Username</label>
+       <div>
+        <input type="text" placeholder="enter Username" class="form-control" id="account">
+       </div>
+    </div>
+    <div>
+        <div class="row mt-2">
+        <label for="mobile">Mobile Number</label>
+            <div class="col-2">
+            <select name="Code" class="form-select" id="mobile">
+                <optgroup label="Code">
+                <option>India +91</option>
+                <option>Iceland +354</option>
+                <option>Iran +98</option>
+                <option>Iraq +964</option>
+            </optgroup>
+            </select>
+        </div>
+        <div class="col-8">
+         <input type="number" placeholder="Enter mobile number" class="form-control">
+        </div>
+    </div>
+     </div>
+     <div class="row mt-2">
+        <label for="email">Email(Optional)</label>
+        <div>
+         <input type="email" placeholder="Enter your email" class="form-control" id="email">
+        </div>
+        </div>
+        <div class="row mt-2">
+            <label for="password">Password</label>
+            <div>
+             <input type="password" placeholder=" At least 6 chars" pattern="[a-z A-Z 0-9]{6}" class="form-control " id="password">
+             <div class="mt-2">
+                <span class="text-info">i&nbsp;</span>Password Must be  at least 6 chars
+             </div>
+            </div>
+            </div>
+            <div class="row mt-2">
+                <label for="password">Confirm Password</label>
+                <div>
+                 <input type="password" placeholder=" At least 6 chars" pattern="[a-z A-Z 0-9]{6}" class="form-control " id="password">
+                 <div class="mt-2">
+                    <span class="text-info">i&nbsp;</span>Password should be match
+                 </div>
+                </div>
+                </div>
+                <div class="row mt-2">
+                    <label for="account">Address</label>
+                    <div>
+                        <input type="text" placeholder="line 1" class="form-control" id="account" >
+                    </div>
+                    <div>
+                        <input type="text" placeholder="city" class="form-control" id="account" >
+                    </div>
+                    <div>
+                        <input type="text" placeholder="state" class="form-control" id="account" >
+                    </div>
+                    <div>
+                        <input type="text" placeholder="pincode" class="form-control" id="account" >
+                    </div>
+                </div>
+                <button>Login</button>
+            <div class="row mt-2">
+                <p>To verify your number, we will send you a text message with a temporary code. Message and data rates may apply</p>
+            </div>
+            <div class="row">
+            </div>
+            <div class="row mt-2">
+                <p>Already Have an account?<a href="#">sign in</a></p>
+                <p>Buying for work?<a href="#">Create a free business account</a>
+            </div>
+            <div class="row mt-2">
+                <p>By creating an account or logging in, you agree to <a href="#">Conditions of Use </a> and <a href="#"> Policy.<a></a></p>   
+            </div>
+      </form>
+   </div>
+</center>
+</body>
+</html>
